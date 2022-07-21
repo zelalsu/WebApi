@@ -16,7 +16,7 @@ namespace WebAPI.Controllers
 
     {
         public HttpResponseMessage Get()
-        {
+        {   
             DataTable table = new DataTable();
 
             string query = @"select EmployeeID,EmployeeName,Department,MailID,CONVERT(varchar(10),DOJ,120) as DOJ from dbo.Employees";
